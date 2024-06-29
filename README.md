@@ -18,6 +18,7 @@ This command line Python program retrieves information about a GitHub user and c
 
     ```
     pip install -r requirements.txt
+    ```
 
 3. **Create a `.env` file based on the provided `.env.example` and fill in your tokens and URLs:**
 
@@ -25,14 +26,16 @@ This command line Python program retrieves information about a GitHub user and c
 
     ```
     cp .env.example .env
+    ```
 
     Edit the `.env` file to include your GitHub token and Freshdesk token:
 
     ```
     FRESHDESK_API_BASE_URL=https://{subdomain}.freshdesk.com/api/v2
     GITHUB_API_BASE_URL=https://api.github.com
-    GITHUB_TOKEN=your_github_token
+    sGITHUB_TOKEN=your_github_token
     FRESHDESK_TOKEN=your_freshdesk_token*
+    ```
 
 ## Usage
 
@@ -40,6 +43,7 @@ To use the program, run `main.py` with the GitHub username and Freshdesk subdoma
 
 ```
 python main.py -u <github_username> -sd <freshdesk_subdomain>
+```
 
 ## Project Structure
 
@@ -56,6 +60,7 @@ The project directory is structured as follows:
 │   └── test_github_api.py
 ├── requirements.txt
 └── .env.example
+```
 
 ##Running Tests
 
