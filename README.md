@@ -12,7 +12,7 @@ This command line Python program retrieves information about a GitHub user and c
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
 2. **Install the required libraries:**
 
@@ -34,7 +34,7 @@ This command line Python program retrieves information about a GitHub user and c
     FRESHDESK_API_BASE_URL=https://{subdomain}.freshdesk.com/api/v2
     GITHUB_API_BASE_URL=https://api.github.com
     sGITHUB_TOKEN=your_github_token
-    FRESHDESK_TOKEN=your_freshdesk_token*
+    FRESHDESK_TOKEN=your_freshdesk_token
     ```
 
 ## Usage
@@ -62,13 +62,14 @@ The project directory is structured as follows:
 └── .env.example
 ```
 
-##Running Tests
+## Running Tests
 
 Run the unit tests using pytest:
 
 ```
 pytest test_github_api.py
 pytest test_freshdesk_api.py
+```
 
 ## Files Description
 
